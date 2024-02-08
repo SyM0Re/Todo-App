@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h1> Todo list App </h1>
+  <body style="margin: 0">
+    <form onsubmit="handleFormSubmit(event)">
+      <label for="todoname">Todo Name</label>
+      <input type="text" name="todoname" id="todoname" />
+      <label for="Des">Description</label>
+      <input type="text" name="Des" id="Des" />
+      <button type="submit">Submit</button>
+    </form>
+    <div>
+      <h3>Todo Remaining</h3>
+      <hr>
+      <ul id = "Tor"></ul>
+    </div>
+    <div>
+      <h3>Todo Done</h3>
+      <hr>
+      <ul id = "Tod"></ul>
+    </div>
+    <button onclick="dd()">Delete all</button>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
